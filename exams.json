@@ -3,6 +3,5 @@
   { "subject": "MFCS",  "code": "Major 6",  "date": "2026-04-24", "time": "1 – 2 PM",   "day": "Friday"    },
   { "subject": "OS",    "code": "Major 7",  "date": "2026-04-25", "time": "1 – 2 PM",   "day": "Saturday"  },
   { "subject": "AEC",   "code": "Elective", "date": "2026-04-27", "time": "1 – 2 PM",   "day": "Monday"    },
-  { "subject": "Math",  "code": "Core",     "date": "2026-04-29", "time": "10 – 11 AM", "day": "Wednesday" },
-  { "subject": "TEST", "code": "Test", "date": "2026-04-20", "time": "1 – 2 PM", "day": "Monday" }
+  { "subject": "Math",  "code": "Core",     "date": "2026-04-29", "time": "10 – 11 AM", "day": "Wednesday" }
 ]
