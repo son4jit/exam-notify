@@ -19,7 +19,7 @@ A minimal, open-source exam schedule website with automated Telegram reminders v
 ## 📁 Project Structure
 
 ```
-your-repo/
+exam-notify/
 ├── index.html                        # The website (do not edit for content)
 ├── exams.json                        # ✏️  Your exam data
 ├── config.yml                        # ✏️  Site text, theme, reminder settings
@@ -39,7 +39,7 @@ Click **Fork** at the top right of this page.
 Then clone your fork:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+git clone https://github.com/son4jit/exam-notify.git
 cd YOUR_REPO_NAME
 ```
 
@@ -189,14 +189,14 @@ Add these two secrets:
 
 Your site will be live at:
 ```
-https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/
+https://YOUR_USERNAME.github.io/exam-notify/
 ```
 
 ---
 
 ### Step 8 — Test the reminder
 
-Don't wait until 9 AM — trigger it manually:
+Don't wait until 5 AM — trigger it manually:
 
 1. Go to the **Actions** tab in your repo
 2. Click **Exam Reminder** in the left sidebar
