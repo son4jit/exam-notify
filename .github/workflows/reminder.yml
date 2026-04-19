@@ -8,6 +8,9 @@ on:
     - cron: "30 23 * * *"
   workflow_dispatch: # Manual trigger from GitHub Actions UI
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true  # Silences Node.js 20 deprecation warning
+
 jobs:
   send-reminder:
     name: Send Telegram Exam Reminder
