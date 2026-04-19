@@ -1,0 +1,29 @@
+name: Exam Reminder
+
+on:
+  schedule:
+    # 23:30 UTC = 05:00 AM IST (UTC+5:30)
+    # To change timezone, update `reminder.cron` in config.yml
+    # then update this cron string to match.
+    - cron: "30 23 * * *"
+  workflow_dispatch: # Manual trigger from GitHub Actions UI
+
+jobs:
+  send-reminder:
+    name: Send Telegram Exam Reminder
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run reminder script
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
+        run: node script.js

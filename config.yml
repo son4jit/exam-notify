@@ -1,0 +1,32 @@
+# ─────────────────────────────────────────────
+#  config.yml — Site & Reminder Configuration
+#  Edit this file to customize everything.
+#  No code changes needed.
+# ─────────────────────────────────────────────
+
+site:
+  title: "Exam Schedule"           # Browser tab title
+  heading: "Exam"                  # Big heading (left word)
+  heading_accent: "Schedule"       # Big heading (right word, shown in red)
+  label: "4th Semester · Sessional Examinations"  # Small text above heading
+  footer: "All the best · Study hard 🎯"
+
+# Accent color for the site (hex)
+theme:
+  accent: "#c0392b"
+
+# Telegram reminder settings
+reminder:
+  # Cron schedule in UTC. 23:30 UTC = 05:00 AM IST
+  # Use https://crontab.guru to convert your timezone
+  cron: "30 23 * * *"
+  # Message template — available variables:
+  #   {subject}, {code}, {date}, {day}, {time}
+  message_template: |
+    📅 Exam Reminder — Tomorrow!
+
+    📚 Subject: {subject} ({code})
+    📆 Date: Tomorrow — {day} {date}
+    ⏰ Time: {time}
+
+    🍀 Good luck — you've got this!
