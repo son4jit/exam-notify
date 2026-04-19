@@ -1,0 +1,33 @@
+name: Telegram Bot
+
+on:
+  workflow_dispatch: # Start manually from GitHub Actions UI
+  push:
+    branches: [main]
+    paths:
+      - bot.js
+      - exams.json  # Restart bot when exams change
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  run-bot:
+    name: Run Telegram Command Bot
+    runs-on: ubuntu-latest
+    # Cap at 350 minutes (GitHub Actions max is 360)
+    timeout-minutes: 350
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Start bot
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+        run: node bot.js
