@@ -40,7 +40,7 @@ Then clone your fork:
 
 ```bash
 git clone https://github.com/son4jit/exam-notify.git
-cd YOUR_REPO_NAME
+cd exam-notify
 ```
 
 ---
