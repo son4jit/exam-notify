@@ -1,7 +1,8 @@
 [
-  { "subject": "DBMS",  "code": "Major 5",  "date": "2026-04-23", "time": "1 – 2 PM",   "day": "Thursday"  },
-  { "subject": "MFCS",  "code": "Major 6",  "date": "2026-04-24", "time": "1 – 2 PM",   "day": "Friday"    },
-  { "subject": "OS",    "code": "Major 7",  "date": "2026-04-25", "time": "1 – 2 PM",   "day": "Saturday"  },
+  { "subject": "MFCS",  "code": "Major 5",  "date": "2026-04-23", "time": "1 – 2 PM",   "day": "Thursday"  },
+  { "subject": "DBMS",  "code": "Com. Sci.",  "date": "2026-04-24", "time": "10 – 11 AM", "day": "Friday"  },
+  { "subject": "OS",    "code": "Major 6",  "date": "2026-04-24", "time": "1 – 2 PM",   "day": "Friday"  },
+  { "subject": "Python Programming",    "code": "Major 7",  "date": "2026-04-25", "time": "1 – 2 PM",   "day": "Saturday"  },
   { "subject": "AEC",   "code": "Elective", "date": "2026-04-27", "time": "1 – 2 PM",   "day": "Monday"    },
   { "subject": "Math",  "code": "Core",     "date": "2026-04-29", "time": "10 – 11 AM", "day": "Wednesday" }
 ]
